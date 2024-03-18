@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="valentine">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="ml-auto mr-auto">
+    <div
+      class="card w-96 bg-base-100 shadow-xl mr-auto ml-auto mt-48 bg-white fone"
+    >
+      <p
+        class="uppercase bg-orange-400 p-2 w-[89px] right-0.5 cursor-pointer rounded-xl bg-gray-800 px-4 py-3 absolute right-3 top-2"
+      >
+        hp
+
+        <span id="hp"> </span>
+      </p>
+
+      <figure class="px-10 pt-10">
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/319.svg"
+          alt="Shoes"
+          class="rounded-xl"
+          id="image"
+          style="width: 300px; height: 300px"
+        />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2
+          id="title"
+          class="black primary first-letter:uppercase text-3xl w-60 subpixel-antialiased font-bold"
+        >
+          Golurk
+        </h2>
+        <p id="text " class="bg-orange-400"></p>
+        <ul id="lists" class="flex gap-16">
+          <li class="text-xl font-extralight">
+            <span id="attack" class="text-2xl font-semibold"> </span>
+            attack
+          </li>
+          <li class="text-xl font-extralight">
+            <span id="defence" class="text-2xl font-semibold"></span> defence
+          </li>
+          <li class="text-xl font-extralight">
+            <span id="speed" class="text-2xl font-semibold"></span> speed
+          </li>
+        </ul>
+      </div>
+      <button
+        class="btn btn-primary uppercase mr-auto ml-auto bottom-4 mb-5"
+        id="generate"
+      >
+        generate
+      </button>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
